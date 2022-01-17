@@ -25,7 +25,7 @@ def solution(progresses, speeds):
     
     return answer
 
-#입출력 2 일 경우 while 타임라인
+#입출력 2 경우 while 타임라인
 #1회    
 #5 >= 5 term = 5
 #time = [10,1,1,20,1] <- pop(0) = 5
