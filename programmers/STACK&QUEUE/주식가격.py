@@ -3,14 +3,14 @@
 def solution(prices):
     answer = []
     while len(prices) > 0:
-        if prices[0] <= min(prices):
+        if prices[0] <= min(prices): #최소값보다 작으면 당연히 끝까지 가격 안떨어짐
             answer.append(len(prices)-1)
             #prices.pop(0)
             
         else:
             for i in range(1,len(prices)):
-                if prices[0] > prices[i]:
-                    answer.append(i)
+                if prices[0] > prices[i]: #기준가격(0번째 있는 주식가격)이 크다면 가격 떨어진 경우.
+                    answer.append(i) 
                     break
         prices.pop(0)
             
