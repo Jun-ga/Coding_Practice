@@ -1,3 +1,4 @@
+#ver1
 #정확도 O 호율성 X
 def solution(prices):
     answer = []
@@ -19,7 +20,9 @@ def solution(prices):
   
 #고찰
 #deque사용, if/else문 줄이기
-#정확도O, 효율성 O,
+
+#ver2
+#정확도O, 효율성 O
 from collections import deque #효율성 높이기 위해 deque 사용
 
 def solution(prices):
