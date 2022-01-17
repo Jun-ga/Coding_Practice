@@ -10,18 +10,7 @@ def solution(progresses, speeds):
         
     #비교군을 term에 저장 ex) term = 5    
     term = time[0]
-    
-#while 타임라인 입출력 2
-#1회    
-#5 >= 5 term = 5
-#time = [10,1,1,20,1] <- pop(0) = 5
-#count = 1
-#2회
-#5 >= 10 (x) -> else로 이동
-#count 업로드 후 초기화
-#비교군 term = 10으로 업데이트
-#반복
-
+   
     while len(time) > 0: #time의 길이가 0일때지까지 반복
         if term >= time[0] :#비교군이랑 같거나 작으면 배포가 가능
             time.pop(0) #배포한 것을 빼내고
@@ -35,3 +24,14 @@ def solution(progresses, speeds):
     answer.append(count)
     
     return answer
+
+#while 타임라인 입출력 2
+#1회    
+#5 >= 5 term = 5
+#time = [10,1,1,20,1] <- pop(0) = 5
+#count = 1
+#2회
+#5 >= 10 (x) -> else로 이동
+#count 업로드 후 초기화
+#비교군 term = 10으로 업데이트
+#반복
