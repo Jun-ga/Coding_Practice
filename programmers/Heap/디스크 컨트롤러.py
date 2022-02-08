@@ -1,4 +1,3 @@
-![구조](file:///C:/Users/gek75/Downloads/IMG_0300.jpg)
 def solution(jobs):
     answer = 0
     time_term = 0
