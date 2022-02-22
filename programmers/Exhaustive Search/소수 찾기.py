@@ -1,5 +1,4 @@
 from itertools import permutations
-import math
 
 def prime_number(x): #소수 찾는 함수
     if x <= 1:
